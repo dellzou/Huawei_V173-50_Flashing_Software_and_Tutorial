@@ -6,7 +6,7 @@
 
 完整操作步骤、115 KB 装备包拆解、OBSCTool 日志逐字段解读和排障表在这篇文章：
 
-**https://xiaozou123.cn/huawei-v173-50-ont-enable-r24-china/**
+[华为 V173-50 光猫使能：R24 装备包、OBSCTool 日志与 CHINA 公版](https://xiaozou123.cn/huawei-v173-50-ont-enable-r24-china/)
 
 ## 文件清单
 
@@ -35,6 +35,17 @@ d3110469d8cccc7ca479105393e047faef74c74cfb34d174deece84153ac1cc8  HW_Dollar2.exe
 5. `su` → `Shell` → `cd /mnt/jffs2`，用 `tftpd64.exe` 取回两份 boardinfo。
 6. `HW_Dollar2.exe` 把 `0x0000001b` 改成 `CHINA`，V5 模式保存，两个文件都改。
 7. 回传覆盖，`EquipMode.sh off`，重启，登录 `telecomadmin / admintelecom`。
+
+## 相关仓库
+
+同品牌其它机型，命令体系相近，排障时可以互相参照；每个仓库开头都对应一篇文章：
+
+- [华为 F30 工具包](https://github.com/dellzou/Huawei_F30_Flashing_Software_and_Tutorial)：华为 F30，改 SN、改 MAC、取超密
+- [华为 HN8145X6 工具包](https://github.com/dellzou/Huawei_HN8145X6_Flashing_Software_and_Tutorial)：华为 HN8145X6，补全 AllShell、改光模
+- [华为 HN8145XR 工具包](https://github.com/dellzou/Huawei_HN8145XR_Flashing_Software_and_Tutorial)：华为 HN8145XR，主猫改公版、从猫组网
+- [华为 K662D 工具包](https://github.com/dellzou/Huawei_K662D_Flashing_Software_and_Tutorial)：华为 K662D，从猫改光猫模式
+- [华为 V173 工具包](https://github.com/dellzou/Huawei_V173_Flashing_Software_and_Tutorial)：华为 V173 主猫，补全 Shell、改公版、改 boardinfo
+- [华为 V175 工具包](https://github.com/dellzou/Huawei_V175_Flashing_Software_and_Tutorial)：华为 V175，R23 固件包开 Telnet
 
 ## 注意
 
